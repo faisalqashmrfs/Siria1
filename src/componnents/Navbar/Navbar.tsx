@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import nav_logo from '../../assets/images/home/nav_logo.webp';
 import nav_search from '../../assets/images/home/Icon.svg';
@@ -20,7 +20,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+// import axios from 'axios';
 import { ColorContext } from '../../Contexts/ColorContext';
 
 interface NavbarProps {
@@ -32,20 +32,28 @@ type TBrandData = {
   name: string
 }
 
+const brandData1: TBrandData[] =  
+[
+{
+  id : 1,
+  name : "منتج1",
+}
+]
+
 const Navbar: React.FC<NavbarProps>  = ({className}) => {
   const [menuActive, setMenuActive] = useState<boolean>(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [brandData, setBrandData] = useState<TBrandData[]>([]);
+  // const [brandData, setBrandData] = useState<TBrandData[]>([]);
 
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/brands-published')
-      .then((res) => setBrandData(res.data.data))
-      .catch((err) => console.error(err))
-  }, []);
+  // useEffect(() => {
+  //   axios.get('http://127.0.0.1:8000/api/brands-published')
+  //     .then((res) => setBrandData(res.data.data))
+  //     .catch((err) => console.error(err))
+  // }, []);
 
 
 
@@ -124,7 +132,7 @@ const Navbar: React.FC<NavbarProps>  = ({className}) => {
               <li className={`navbar-item ${selectedItem === 'products' ? 'active' : ''}`}>
                 <a onClick={() => handleItemClick('products')}>
                   <DropdownButton id="dropdown-basic-button" title="منتجاتنا ">
-                    {brandData.map((item) => {
+                    {brandData1.map((item) => {
                       return (
                         <Dropdown.Item key={item.id} onClick={() => handeleClickOnBrand(item.id)}>{item.name}</Dropdown.Item>
 
@@ -187,7 +195,7 @@ const Navbar: React.FC<NavbarProps>  = ({className}) => {
                 <button onClick={() => handleOpenProducts('greengold')} className='MA_productsStyle'>المنتجات</button>
                 {isOpen && (
                   <ul>
-                    {brandData.map((item) => {
+                    {brandData1.map((item) => {
                       return (
                         <li key={item.id} onClick={() => handeleClickOnBrand(item.id)}>
                           {item.name}

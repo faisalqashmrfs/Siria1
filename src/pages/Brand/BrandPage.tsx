@@ -2,16 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { Hero } from '../../componnents/Product_Hero/Hero';
 import { TBrandData, TCategoryData, TProductData } from '../../types/types';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import './Brand.css';
 import Product from '../../componnents/Product/Product';
 import { ColorContext, ColorProvider } from '../../Contexts/ColorContext';
 import Navbar from '../../componnents/Navbar/Navbar';
+import image1 from '../../Static/image1.png';
+import image2 from '../../Static/main.png';
+import main2 from '../../Static/main2.png';
+import product1 from '../../Static/product1.png';
+import pro1 from '../../Static/pro1.png';
 
 const BrandPage = () => {
   const { id } = useParams<{ id: string }>();
   const [brandData, setBrandData] = useState<TBrandData>();
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<TCategoryData[]>([]);
   const [brandDescription, setBrandDescription] = useState('');
   const [products, setProducts] = useState<TProductData[]>([]);
   const [background_image, setBackground_image] = useState('');
@@ -24,19 +29,108 @@ const BrandPage = () => {
   const { brandColor } = React.useContext(ColorContext);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/api/brand/${id}/site`)
-      .then((response) => {
-        const data = response.data.data;
+    
+        const data = {
+          
+            id : 1,
+            name: "صحتك دهَب",
+            description: "ذهب أخضر السوري يمثل  كافة النباتات والأعشاب الطبيعية السورية من البادية والجبل والساحل وغوطة الشام وسهل حوران.\r\nتشكيلة واسعة من المنتجات الطبيعية بالنكهة السورية الخاصة.\r\nجمعت بعناية ومحبة بأيدي وخبرات سورية.",
+            brand_color: "#153d1f",
+            presentation_image: main2,
+            background_image: image1,
+            main_image: image2,
+            categories : [
+              {
+                id : 1,
+                name : "عبوة",
+                products : [
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                  {
+                    name: "بنفسج عطري",
+                    main_image: pro1,
+                    additional_image: product1,
+                  },
+                ]
+              }
+            ],
+        }
         setBrandData(data);
         setCategories(data.categories);
-        setBrandColor(data.color);
+        setBrandColor(data.brand_color);
         setBackground_image(data.background_image);
         setBrandDescription(data.description);
         setpresentation_image(data.presentation_image);
         setmainImg(data.main_image);
         setname(data.name);
-      });
+        console.log(data);
+        
+      ;
   }, [id]);
+  // useEffect(() => {
+  //   axios.get(`http://127.0.0.1:8000/api/brand/${id}/site`)
+  //     .then((response) => {
+  //       const data = response.data.data;
+  //       setBrandData(data);
+  //       setCategories(data.categories);
+  //       setBrandColor(data.color);
+  //       setBackground_image(data.background_image);
+  //       setBrandDescription(data.description);
+  //       setpresentation_image(data.presentation_image);
+  //       setmainImg(data.main_image);
+  //       setname(data.name);
+  //       console.log(data);
+        
+  //     });
+  // }, [id]);
 
   useEffect(() => {
     if (brandData && brandData.categories.length > 0) {

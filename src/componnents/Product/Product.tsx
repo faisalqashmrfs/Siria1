@@ -12,8 +12,8 @@ const Product: React.FC<TProduct> = ({ additional_image, name, color ,main_image
 
   const navigate = useNavigate();
 
-  const navigateProductDetails = (_event: React.MouseEvent<HTMLButtonElement>, id: number) => {
-    navigate(`/productDetails/${id}`);
+  const navigateProductDetails = (_event: React.MouseEvent<HTMLButtonElement>, _id: number) => {
+    navigate(`/productDetails`);
   }
 
   const mystyle = {

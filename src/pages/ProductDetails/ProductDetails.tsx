@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// import productImagePlaceholder from '../../assets/images/a vie/product3.webp';
+import productImagePlaceholder from '../../assets/images/a vie/product3.webp';
 import './ProductDetails.css';
-// import { LuLink } from "react-icons/lu";
-// import { FaSquareInstagram } from "react-icons/fa6";
-// import { BsFacebook } from "react-icons/bs";
+import { LuLink } from "react-icons/lu";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BsFacebook } from "react-icons/bs";
 import NavigationLinks from '../../componnents/NavigationLinks/NavigationLinks';
 
 
 
 const ProductDetails = () => {
-    // const [product, setProduct] = useState({
+    const product = {
         
-    //     main_image: productImagePlaceholder,
-    //     name: "للتنحيف و إنقاص الوزن",
-    //     subname1: "شاي أخضر سوري مع التوت البري",
-    //     product_description: "خلطة طبيعية ومدعمة للتنحيف وإنقاص الوزن",
-    //     brand_id: "a vie",
-    //     code_number: "8",
-    //     weight: "50 g",
-    //     packaging_description: "معبأة في كيس نايلون وعلبة كرتون خاصة",
-    //     count_each_package: "10",
-    //     additional_image: [productImagePlaceholder, productImagePlaceholder, productImagePlaceholder],
-    //     description_component: " يسبه الليمون(سيمبوبوجون، سيترانوسstapt dc) أوراق التوت البري  ",
-    //     subname2: " خلطة طبيعية تساعد في التنحيف وإنقاص الوزن  تفيد في اظطرابات الجهاز الهضمي تساعد في التنحيف وإنقاص الوزن تفيد في حرق شحوم البدانة",
-    //     category_id: "أعشاب طبية متوسطية غنية بالمكونات النشطةز يتم جمعها بعناية من جبال الساحل السوريز وتجفيفها في الظل وتعقيمها وفق أحدث التقنيات تحت إشراف الصيادلة. يتم اختيار الجنس والرائحة والأجزاء الطبية المطابقة لدستور الأدوية العلمي avie herbs",
-    // });
-    // const [activeSection, setActiveSection] = useState('components');
+        main_image: productImagePlaceholder,
+        name: "للتنحيف و إنقاص الوزن",
+        subname1: "شاي أخضر سوري مع التوت البري",
+        product_description: "خلطة طبيعية ومدعمة للتنحيف وإنقاص الوزن",
+        brand_id: "a vie",
+        code_number: "8",
+        weight: "50 g",
+        packaging_description: "معبأة في كيس نايلون وعلبة كرتون خاصة",
+        count_each_package: "10",
+        additional_image: [productImagePlaceholder, productImagePlaceholder, productImagePlaceholder],
+        description_component: " يسبه الليمون(سيمبوبوجون، سيترانوسstapt dc) أوراق التوت البري  ",
+        subname2: " خلطة طبيعية تساعد في التنحيف وإنقاص الوزن  تفيد في اظطرابات الجهاز الهضمي تساعد في التنحيف وإنقاص الوزن تفيد في حرق شحوم البدانة",
+        category_id: "أعشاب طبية متوسطية غنية بالمكونات النشطةز يتم جمعها بعناية من جبال الساحل السوريز وتجفيفها في الظل وتعقيمها وفق أحدث التقنيات تحت إشراف الصيادلة. يتم اختيار الجنس والرائحة والأجزاء الطبية المطابقة لدستور الأدوية العلمي avie herbs",
+    };
+    const [activeSection, setActiveSection] = useState('components');
 
     return (
         <>
@@ -39,7 +39,7 @@ const ProductDetails = () => {
             </div>
 
 
-            {/* <div className="na-product-details">
+            <div className="na-product-details">
                 <div className='HJ_PartOne'>
                     <div className="na-product-image">
                         <img src={product.main_image} alt={product.name} />
@@ -123,7 +123,7 @@ const ProductDetails = () => {
 
 
 
-            </div> */}
+            </div>
 
         </>
 
