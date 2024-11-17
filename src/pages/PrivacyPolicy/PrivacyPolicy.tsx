@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./PrivacyPolicy.css";
-import axios from "axios";
+// import axios from "axios";
+import iconpolicy1 from "../../Static/1.svg";
+import iconpolicy2 from "../../Static/2.svg";
+import iconpolicy3 from "../../Static/3.svg";
 
 interface Policy {
   id?: number;
@@ -11,29 +14,43 @@ interface Policy {
 }
 
 const PrivacyPolicy = () => {
-  const [policies, setPolicies] = useState<Policy[]>([]);
+  // const [Policies, setPolicies] = useState<Policy[]>([]);
 
-  useEffect(() => {
-    axios
-      .get("http://127.0.0.1:8000/api/policy")
-      .then((response) => {
-        setPolicies(response.data.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://127.0.0.1:8000/api/policy")
+  //     .then((response) => {
+  //       setPolicies(response.data.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }, []);
 
       {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< static arry for tisting Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></>*/}
-// const StaticEvaluations : Policy[] =  [
-//   {
-//     id: 1,
-//     policy_number: '01',
-//     title: 'string',
-//     description: 'string',
-//     icon: 'string',
-//   },
-// ] 
+const StaticEvaluations : Policy[] =  [
+  {
+    id: 1,
+    policy_number: '01',
+    title: 'بشكل عام',
+    description: "تهدف سياسة الشركة إلى توفير منتجات ذات جودة عالية والحفاظ على سلامة المستهلكين، وتعزيز الاستدامة البيئية والمسؤولية الاجتماعية.",
+    icon: iconpolicy1,
+  },
+  {
+    id: 2,
+    policy_number: '02',
+    title: 'بشكل عام',
+    description: "تهدف سياسة الشركة إلى توفير منتجات ذات جودة عالية والحفاظ على سلامة المستهلكين، وتعزيز الاستدامة البيئية والمسؤولية الاجتماعية.",
+    icon: iconpolicy2,
+  },
+  {
+    id: 3,
+    policy_number: '03',
+    title: 'بشكل عام',
+    description: "تهدف سياسة الشركة إلى توفير منتجات ذات جودة عالية والحفاظ على سلامة المستهلكين، وتعزيز الاستدامة البيئية والمسؤولية الاجتماعية.",
+    icon: iconpolicy3,
+  },
+] 
 {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< static arry for tisting Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></>*/}
 
 console.log();
@@ -47,10 +64,10 @@ console.log();
           </div>
           <div className="ne-privacy-layout">
 
-            {policies.length == 3 && (
+            {StaticEvaluations.length == 3 && (
               <>
                 <div className="ne-image-layout"></div>
-                {policies.slice(0, 1).map((policy) => (
+                {StaticEvaluations.slice(0, 1).map((policy) => (
                   <div key={policy.id} className="ne-layout-box-1">
                     <div className="ne-box-image">
                       <img className="ne-policy-img" src={policy.icon} alt="policy" />
@@ -63,7 +80,7 @@ console.log();
                   </div>
                 ))}
                 <div className="ne-layout-box-two">
-                  {policies.slice(1, 3).map((policy, index) => (
+                  {StaticEvaluations.slice(1, 3).map((policy, index) => (
                     <div key={policy.id} className={`ne-layout-box-${index + 2}`}>
                       <div className="ne-box-image">
                         <img className="ne-policy-img" src={policy.icon} alt="" />
@@ -80,10 +97,10 @@ console.log();
             )}
 
             {/* ============================================================== */}
-            {policies.length == 2 && (
+            {StaticEvaluations.length == 2 && (
               <>
                 <div className="ne-image-layout-2"></div>
-                {policies.slice(0, 1).map((policy) => (
+                {StaticEvaluations.slice(0, 1).map((policy) => (
                   <div key={policy.id} className="ne-layout-box-1">
                     <div className="ne-box-image">
                       <img className="ne-policy-img" src={policy.icon} alt="policy" />
@@ -96,7 +113,7 @@ console.log();
                   </div>
                 ))}
                 <div className="ne-layout-box-two">
-                  {policies.slice(1, 3).map((policy, index) => (
+                  {StaticEvaluations.slice(1, 3).map((policy, index) => (
                     <div key={policy.id} className={`ne-layout-box-${index + 2}`}>
                       <div className="ne-box-image">
                         <img className="ne-policy-img" src={policy.icon} alt="" />
@@ -113,10 +130,10 @@ console.log();
             )}
 
             {/* ============================================================= */}
-            {policies.length === 1 && (
+            {StaticEvaluations.length === 1 && (
               <>
                 <div className="ne-image-layout-1"></div>
-                {policies.map((policy, index) => (
+                {StaticEvaluations.map((policy, index) => (
                   <div key={policy.id} className={`ne-layout-box-1-${index + 1}`}>
                     <div className="ne-box-image">
                       <img className="ne-policy-img" src={policy.icon} alt="policy" />
@@ -133,10 +150,10 @@ console.log();
 
             {/* ======================================================== */}
 
-            {policies.length >= 4 && (
+            {StaticEvaluations.length >= 4 && (
               <div className="ne-multyboxes" >
                 {
-                  policies.map((policy) => (
+                  StaticEvaluations.map((policy) => (
                     <div key={policy.id} className="ne-multy-box">
                       <div className="ne-box-image">
                         <img className="ne-policy-img" src={policy.icon} alt="policy" />
