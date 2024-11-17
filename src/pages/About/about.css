@@ -1,0 +1,211 @@
+.hero-about{
+    background-image: url('../../assets/images/about/about.jpg');
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.hero-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero-content span{
+font-size: 24px;
+color: white;
+
+}
+.hero-content div{
+    font-size: 75px;
+    color: white;
+
+}
+.slugen-sec{
+    margin: 0 1.5rem !important;
+    padding: 60px 10px;
+}
+.specialh3{
+    text-align: center;
+    padding-bottom: 38px;
+    position: relative;
+}
+.specialh3 img{
+    position: absolute;
+    top: -10px;
+}
+.slugen-sec h3 span{
+    color: #A39F9F;
+}
+.slugen-sec .content {
+    display: flex;
+    align-items: center;
+}
+.slugen-sec .content img {
+    width: 40%;
+}
+.slugen-sec .content p{
+    color: black;
+}
+.whyweare{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.whyweare .title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.whywedesc{
+    line-height: 2;
+    width: 73%;
+    top: 50;
+    margin-right: 50%;
+    transform: translateX(50%);
+    padding: 17px;
+}
+.whyweare .title .top-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 113px;
+    height: 38px;
+    border: 3px solid #9BC352;
+    border-bottom: none;
+    top: -35px;
+}
+.whywetitle{
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.whyweare .title .bottom-title{
+    position: absolute;
+    left: 50%;
+    height: 11px;
+    transform: translateX(-50%);
+    border: 3px solid #9BC352;
+    width: 113px;
+    border-top: none;
+    bottom: -21px;
+}
+
+
+
+
+/* futures */
+.futures{
+    padding-bottom: 60px;
+}
+.cards-futures{
+    position: relative;
+    
+}
+
+.overlay-futures {
+    position: absolute;
+    height: 50%;
+    /* transform: translateY(-50%); */
+    top: 50%;
+    width: 100%;
+    background: #80808024;
+}
+.futures-container{
+    display: flex;
+    justify-content: space-between;
+    /* width: 60%; */
+    padding: 71px;
+    text-align: center;
+    gap: 26px;
+    z-index: 10;
+    position: relative;
+}
+.future{
+    position: relative;
+    width: 33.33%;
+    height: 193px;
+    border: 2px solid #80808033;
+    border-radius: 17px;
+    position: relative;
+    box-shadow: 12px 12px 7px #80808052;
+}
+.future div{
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 100%;
+}
+.future div h4{
+    font-size: 18px;
+    padding-top: 10px;
+
+}
+
+
+/* all-creative  */
+.all-creative{
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.all-creative div{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.whyweare img ,.all-creative img{
+
+    max-width: 100%;
+}
+
+/* resposive  */
+@media(max-width:768px)
+{
+   .hero-content span{
+    font-size: 24px;
+}
+.hero-content div{
+    font-size: 40px;
+} 
+.slugen-sec .content{
+    flex-direction: column;
+    text-align: center;
+}
+.slugen-sec .content img{
+    width: 100%;
+}
+.futures-container{
+    padding: 28px;
+    flex-wrap: wrap;}
+.future{
+    height: 104px;
+        width: 43%;
+
+}
+.future div img{
+    width: 26px;
+}
+.future div h4{
+    font-size: 10px;
+}
+.all-creative .title{
+    font-size: 25px;
+}
+.futures .specialh3 , .slugen-sec .specialh3{
+    padding-bottom: 0;
+}
+.top-title , .bottom-title{
+    display: none;
+}
+.overlay-futures {
+    transform: translateY(-50%);
+}
+}

@@ -1,0 +1,310 @@
+.na-footer {
+    width: 100%;
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.na-footer .na-container {
+    margin-top: 8.85%  /* 121px */ ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.na-container .na-sec1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.na-sec1 img {
+    width: 251px;
+    margin-bottom: 40px;
+}
+
+.na-sec1 .NA_Footer_paragraph {
+    width: 479px;
+}
+
+.na-sec1 .NA_Footer_paragraph p {
+    font-family: var(--almarai-family);
+    font-size:/*  1.4rem */20px;
+    color: var(--white-color);
+}
+
+.NA_Small_Sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.na-container .na-sec2,
+.na-container .na-sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.na-container .na-sec4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.na-container .na-sec2 .MA_title,
+.na-container .na-sec3 .MA_title,
+.na-container .na-sec4 .MA_title {
+    font-size: 24px;
+    font-family: var(--mulish-family);
+    color: var(--white-color);
+
+}
+
+.na-container .na-sec2 .MA_paragraph,
+.na-container .na-sec3 .MA_paragraph,
+.na-sec4 .na-contact-item .MA_paragraph {
+    font-size: 20px;
+    font-family: var(--mulish-family);
+    color: var(--white-color);
+}
+
+.na-container .na-sec3 .MA_paragraph {
+    cursor: pointer;
+}
+
+.na-container .na-sec4 .na-contact-item {
+    display: flex;
+}
+
+
+.na-contact-item .na-icon-container {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin-left: 14.8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.na-contact-item .na-icon-container img {
+    height: 20px;
+    width: 20px;
+}
+
+.na-footer .na-line {
+    width: /* 1166px */ 90%;
+    height: 1px;
+    background-color: var(--white-color);
+    margin-top: 60px;
+}
+
+.NA_Flex_footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.na-footer .na-footer-bottom {
+    width: 100%;
+    margin-block: 30px 27px;
+    
+}
+
+.na-footer .na-footer-bottom span {
+    font-size: 16px;
+    color: var(--white-color);
+    font-family: var(--mulish-family);
+    margin-right: 10px;
+}
+
+@media screen and (min-width : 993px) and (max-width:1164px) {
+    .na-footer .na-container {
+        gap: 20px;
+    }
+    .NA_Small_Sections {
+        gap: 40px;
+    }
+    .na-sec1 .NA_Footer_paragraph {
+        width: 377px;
+    }
+    
+    .na-sec1 .NA_Footer_paragraph p {
+        font-size: 15px;
+    }
+    
+
+}
+@media screen and (max-width : 992px) { 
+    .NA_Small_Sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 83%;
+    }
+
+    .na-footer .na-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        margin-right: 25px;
+        margin-top: 130px;
+
+    }
+
+    .na-sec1 img {
+        width: 226px;
+        margin-bottom: 30px;
+    }
+
+    .na-footer .na-line {
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .na-sec1 .NA_Footer_paragraph {
+        width: 83%;
+    }
+
+    .na-sec1 .NA_Footer_paragraph p {
+        font-size: 18px;
+    }
+
+    .na-container .na-sec2 .MA_title,
+    .na-container .na-sec3 .MA_title,
+    .na-container .na-sec4 .MA_title {
+        font-size: 22px;
+    }
+
+    .na-container .na-sec2 .MA_paragraph,
+    .na-container .na-sec3 .MA_paragraph,
+    .na-sec4 .na-contact-item .MA_paragraph {
+        font-size: 20px;
+    }
+
+    .na-container .na-sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .na-footer .na-footer-bottom span {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .na-footer .na-footer-bottom img {
+        width: 53px;
+    }
+
+    .na-footer .na-footer-bottom {
+        margin-block: 20px 30px;
+    }
+
+    .na-contact-item .na-icon-container {
+        height: 25px;
+        width: 25px;
+
+    }
+
+    .na-contact-item .na-icon-container img {
+        height: 15px;
+        width: 15px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .NA_Small_Sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+
+    .na-footer .na-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        margin-right: 25px;
+        margin-top:92px;
+    }
+
+    .na-sec1 img {
+        width: 154px;
+        margin-bottom: 20px;
+    }
+
+    .na-footer .na-line {
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .na-sec1 .NA_Footer_paragraph {
+        width: 92%;
+    }
+
+    .na-sec1 .NA_Footer_paragraph p {
+        font-size: 15px;
+    }
+
+    .na-container .na-sec2 .MA_title,
+    .na-container .na-sec3 .MA_title,
+    .na-container .na-sec4 .MA_title {
+        font-size: 14px;
+    }
+
+    .na-container .na-sec2 .MA_paragraph,
+    .na-container .na-sec3 .MA_paragraph,
+    .na-sec4 .na-contact-item .MA_paragraph {
+        font-size: 12px;
+    }
+
+    .na-container .na-sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .na-footer .na-footer-bottom span {
+        font-size: 9px;
+        margin-right: 5px;
+    }
+
+    .na-footer .na-footer-bottom img {
+        width: 35.13px;
+    }
+
+    .na-footer .na-footer-bottom {
+        margin-block: 10px 20px;
+    }
+
+    .na-contact-item .na-icon-container {
+        height: 20px;
+        width: 20px;
+    }
+
+    .na-contact-item .na-icon-container img {
+        height: 12px;
+        width: 12px;
+    }
+
+}

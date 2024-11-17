@@ -1,0 +1,40 @@
+.NavigationLinks {
+    width:max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23.65px;
+    gap: 8px;
+
+}
+
+.Navigate-main {
+    color: var(--gray-color);
+    font-family: var(--almarai-family);
+    font-size: 1rem /* 24px */;
+    line-height: 26.78px;
+    padding-left: 8px;
+
+}
+
+
+.Navigate-link {
+    color: var(--gray-color);
+    font-family: var(--almarai-family);
+    font-size: 1rem /* 16px */;
+    font-weight: var(--normal-weight);
+    line-height: 17.86px;
+    text-decoration: none;
+
+}
+
+
+
+.Navigate-submain {
+    color: var(--gray-color);
+    font-family: var(--almarai-family);
+    font-size: 0.875rem /* 14px */;
+    font-weight: var(--normal-weight);
+    line-height: 15.62px;
+
+}

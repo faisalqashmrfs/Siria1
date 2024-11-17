@@ -1,0 +1,49 @@
+.na-isosection {
+    display: flex;
+    align-items: center;
+
+}
+
+.na-isosection img {
+    margin-left: 10px;
+}
+
+.na-isosection .NA_title_Iso {
+    margin: 0;
+    font-size: 30px;
+    color: var(--dark-black);
+    font-family: var(--almarai-family);
+}
+
+@media screen and (max-width : 992px) {
+    .na-isosection .NA_title_Iso {
+        font-size: 22px;
+        
+    }
+
+    .na-isosection img {
+        width: 25.36px;
+        margin-left: 10px;
+    }
+
+    .na-isosection {
+        margin-bottom: 50px;
+
+    }
+}
+@media screen and (max-width: 576px) {
+    .na-isosection .NA_title_Iso {
+        font-size: 16px;
+    }
+
+    .na-isosection img {
+        width: 21.36px;
+        margin-left: 7px;
+    }
+
+    .na-isosection {
+        margin-bottom: 40px;
+
+    }
+
+}

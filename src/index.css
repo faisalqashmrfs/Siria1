@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typold');
+
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    direction: rtl;
+  
+}
+.HJ_MarginSection{
+    margin-block: 7.32%;
+}
+
+:root {
+
+    /* 
+        ==========================
+        ********color************
+        ========================
+    */
+    --blue-color: #283760;
+    --baby-blue: #58B0E0;
+    --bb-green-color: #A4C241;
+    --white-color: #FFFFFF;
+    --red-color: #DC3545;
+    --green-color: #29C92F;
+    --pink-color: #B0426C;
+    --cyan-color: #7367F0;
+    --gray-color: #636363;
+    --light-gray: #A1A1A1;
+    --light-gray2: #EDEDED;
+
+
+
+
+    --deep-green: #153D1F;
+    --dark-red: #912A34;
+    --light-red: #CF2D1F;
+    --light-green: #1F7755;
+    --dark-purple: #472A57;
+    --dark-blue: #3D3874;
+    --dark-brown: #523D28;
+
+    --dark-oil-color: #495841;
+    --light-oil-color: #4D541D;
+    --dark-orange: #C94110;
+    --light-orange: #A45715;
+    --light-brown: #7C3019;
+    --dark-green: #335221;
+    --cherry-red: #C61F26;
+    --light-honey-color: #D37E2D;
+    --dark-black: #212121;
+
+    --green-ogaro: #4C5626;
+    --green-ogaro2: #9BC352;
+    --blue-a-vie: #2B3888;
+    --blue-a-vie1: #476973;
+    --blue-a-vie2: #485761;
+    --green-a-vie: #396954;
+    --green-a-vie1: #6F7853;
+    --green-a-vie2: #8C9A3E;
+    --orange-a-vie: #B73933;
+    --red-a-vie: #C6282F;
+
+
+
+
+
+    /* 
+        ==========================
+        ********font************
+        ========================
+    */
+    --almarai-family: "Almarai", sans-serif;
+    --mulish-family: "Mulish", sans-serif;
+    --roboto-family: "Roboto", sans-serif;
+    --caveat-family:"Caveat", cursive;
+    --Typold-family: 'Typold', sans-serif;
+    --bold-weight: 700;
+    --normal-weight: 400;
+
+
+}
+

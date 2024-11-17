@@ -1,0 +1,19 @@
+.SectionEndPage {
+    position: relative;
+}
+
+.HJ_NewsLetterForm {
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+@media screen and (max-width : 992px) {
+    .HJ_NewsLetterForm {
+        top: -13%;
+    }
+
+}
+

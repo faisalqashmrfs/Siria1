@@ -1,0 +1,140 @@
+.ra-contact-msg-wrapper {
+    font-family: var(--almarai-family);
+    width: 59.5900%;
+    height: 27.6459%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.ra-contact-msg-wrapper .ra-contact-msg-title h3{
+    
+    line-height: 34px;
+    font-size: 2rem; /*32px*/
+    margin-bottom: 31px;
+    font-weight: var(--bold-weight);
+}
+
+.ra-contact-msg-wrapper .ra-contact-msg-rectangle {
+    width: 100%;
+    height: 497px;
+    border: 5px solid var(--green-ogaro2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.ra-contact-msg-wrapper .ra-contact-msg-form {
+
+    position: absolute;
+    width: 48.24%;
+    height: 464px;
+    margin: 77px 77px 0px 77px;
+    translate: 0px 77px;
+
+
+}
+
+
+.ra-contact-msg-wrapper .ra-contact-msg-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: var(--white-color);
+
+
+}
+
+.ra-contact-msg-wrapper .ra-contact-msg-form input {
+
+    width: 100%;
+    padding: 21px 24px 21px 24px;
+    border: 1px solid var(--light-gray2);
+    border-radius: 15px;
+    background-color: var(--light-gray2);
+    font-family: var(--mulish-family);
+    font-size: 1.25rem;
+    font-weight: var(--normal-weight);
+    text-align: start;
+}
+
+
+.ra-contact-msg-wrapper .ra-contact-msg-form input::placeholder {
+    font-family: var(--mulish-family);
+    font-size: 1.25rem;
+    color: var(--light-gray);
+    font-weight: var(--normal-weight);
+
+
+}
+
+.ra-contact-msg-wrapper .ra-contact-msg-form textarea {
+    width: 100%;
+    height: 30%;
+    font-family: var(--mulish-family);
+    font-size: 1.25rem;
+    padding: 21px 24px 21px 24px;
+    border: 1px solid var(--light-gray2);
+    border-radius: 15px;
+    background-color: var(--light-gray2);
+    text-align: start;
+    resize: none;
+}
+
+.ra-contact-msg-wrapper .ra-contact-msg-form textarea::placeholder {
+
+    font-family: var(--mulish-family);
+    font-size: 1.25rem;
+    color: var(--light-gray);
+    font-weight: var(--normal-weight);
+}
+
+
+.ra-contact-msg-wrapper .ra-contact-msg-form .button-div {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+.ra-contact-msg-wrapper .ra-contact-msg-form .button-div button {
+    width: 32%;
+    height:61px;
+    text-align: center;
+    font-family: var(--mulish-family);
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: var(--bold-weight);
+    background-color: var(--green-ogaro2);
+    padding: 10px 18px;
+    line-height: 34px;
+    border-radius: 15px;
+    border:1px solid transparent;
+
+
+}
+
+
+@media screen and (max-width:992px){
+    .ra-contact-msg-wrapper .ra-contact-msg-form
+    {
+        translate: 0px 45px;
+       
+    }
+}

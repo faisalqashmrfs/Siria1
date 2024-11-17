@@ -1,0 +1,266 @@
+.ne-privacy-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:6rem;
+    position: relative;
+  }
+  
+  .ne-image-layout {
+    width: 1148.5px;
+    height: 492px;
+    background-image: url(../../assets/images/home/policylayout.svg);
+    position: absolute;
+    z-index: 1;
+  }
+  /*
+   ============================== 
+  =================================
+  */
+  /* if i have two box */
+  .ne-image-layout-2 {
+    width: 1063.5px;
+    height: 262px;
+    background-image: url(../../assets/images/home/policylayout.svg);
+    position: absolute;
+    z-index: 1;
+  }
+  /* if i have one box */
+  .ne-image-layout-1 {
+    width: 814.5px;
+    height: 262px;
+    background-image: url(../../assets/images/home/policylayout.svg);
+    position: absolute;
+    z-index: 1;
+  }
+  .ne-layout-box-1-1{
+    padding-right: 23px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .ne-policy-description-1{
+    max-width: 609.34px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: var(--almarai-family);
+
+    color: var(--dark-black);
+  }
+  /* ======================
+  ===================================
+  */
+  /* if i have more than three */
+  .ne-multyboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+  }
+  .ne-multy-box{
+    padding: 10px;
+    width: 306px;
+    height: 312px;
+    background-color: transparent;
+    border: 5px solid transparent;
+    border-image: radial-gradient(circle at 29% 98%, #4EAFDA 29%, #9BC352 98%) 20 stretch;
+  }
+  .ne-policy-description-4{
+    font-family: var(--almarai-family);
+    font-size: 16px;
+    font-weight: var(--normal-weight);
+    max-width: 304px;
+    line-height: 40px;
+    color: var(--dark-black);
+  }
+  /* ======================================= */
+  
+  .ne-privacy-title .ne-head-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: var(--bold-weight);
+    font-family: var(--almarai-family);
+    color: var(--dark-black);
+    margin-bottom: 120px;
+  }
+  .ne-policy-number{
+    font-family: var(--caveat-family);
+    font-size: 2.2rem;
+    font-weight: var(--bold-weight);
+    color: #ccc;
+  }
+  .ne-box-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ne-box-image img{
+    width: 52px;
+  }
+ 
+  
+  .ne-layout-box-1 {
+    padding-right: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ne-layout-box-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .ne-layout-box-2,
+  .ne-layout-box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 30px;
+  }
+  
+  .ne-policy-description,
+  .ne-policy-title {
+    font-family: var(--almarai-family);
+    font-size: 20px;
+    font-weight: var(--normal-weight);
+    max-width: 304px;
+    line-height: 40px;
+    color: var(--dark-black);
+  }
+  
+  .ne-box-two-section-1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .ne-policy-description-2, .ne-policy-description-3 {
+    max-width: 609.34px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: var(--almarai-family);
+    color: var(--dark-black);
+    
+  }
+  
+  @media (max-width: 1200px) {
+    .ne-privacy-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 250px;
+      position: relative;
+      
+    }
+    .ne-layout-box-2,
+  .ne-layout-box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+  }
+  
+    .ne-layout-box-two {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .ne-box-two-section-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .ne-image-layout {
+      /* width: 336.5px; */
+      width: 375.5px;
+      height: 1297.5px;
+      background-image: url(../../assets/images/home/layout1.svg);
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      padding: 19px;
+    }
+
+    .ne-policy-description{
+      line-height: 30px;
+      font-size: 16px;
+    }
+    .ne-policy-title{
+      font-size: 16px;
+      line-height: 10px;
+    }
+    
+    .ne-policy-description-2, .ne-policy-description-3 {
+      max-width: 334px;
+      line-height: 30px;
+      font-size: 16px;
+      font-family: var(--almarai-family);
+    }
+  
+    .ne-layout-box-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 14px 20px 14.5px;
+    }
+    .ne-layout-box-two {
+      
+      gap: 14rem;
+    }
+
+
+    .ne-image-layout-2 {
+      width: 375.5px;
+      height: 789.5px;
+      background-image: url(../../assets/images/home/layout1.svg);
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      padding: 19px;
+    }
+    .ne-image-layout-1 {
+      width: 375.5px;
+      height: 442.5px;
+      background-image: url(../../assets/images/home/layout1.svg);
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      padding: 19px;
+    }
+    .ne-policy-description-1{
+      max-width: 304.34px;
+      line-height: 40px;
+      font-size: 20px;
+      font-family: var(--almarai-family);
+    }
+    .ne-layout-box-1-1{
+      margin-top: 30px;
+      /* padding-right: 23px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 2rem; */
+    }
+  }
+  

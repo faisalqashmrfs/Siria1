@@ -1,0 +1,63 @@
+.ne_slider_heading{
+    color: var(--pink-color);
+    font-size: 36px;
+    font-family: var(--almarai-family);
+    margin-bottom: 50px;
+    
+}
+
+.ne_ProductSlider{
+    margin-top: 49px;
+    margin-bottom: 120px;
+}
+
+.slick-prev, .slick-next{
+    display: none !important;
+}
+
+.ne_product_con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex: 1; /* Allow items to be evenly distributed within the slide container */
+}
+
+.ne_product_con img{
+    width: 288px; /* Adjust the width to fit your design */
+    margin-bottom: 15px; /* Add some margin to space out the elements */
+}
+
+.ne_slide_container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 40px;
+  }
+
+  
+
+.ne_product_info{
+    padding: 10px 15px; /* Adjust padding to fit your design */
+    background-color: var(--blue-a-vie);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: var(--bold-weight);
+    border: none;
+}
+
+.fa-angle-icon{
+    color: white;
+    margin-right: 5px;
+}
+
+.ne_product_text{
+    font-size: 20px; /* Adjust font size to fit your design */
+    font-weight: var(--bold-weight);
+    font-family: var(--almarai-family);
+    text-align: center;
+    margin-bottom: 10px;
+}

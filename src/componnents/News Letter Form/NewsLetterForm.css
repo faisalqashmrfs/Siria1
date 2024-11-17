@@ -1,0 +1,188 @@
+
+
+.IB_FormContainer {
+  width:/* 1166px */ 90vw;
+  background-color: var(--white-color);
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.IB_FormContainer .IB_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+}
+
+.IB_FormContainer .IB_container_Icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.IB_TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.IB_TextContainer h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.IB_TextContainer .IB_Subsicripe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.IB_TextContainer .IB_Subsicripe span {
+  font-size: 20px;
+  font-family: var(--almarai-family);
+  color: var(--dark-black);
+}
+
+.IB_InputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 374px;
+}
+
+.IB_InputContainer .IB_Input {
+  width: 516px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: right;
+  background-color: var(--light-gray2);
+}
+
+.IB_InputContainer .IB_Button {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: var(--green-ogaro2);
+  color: var(--dark-black);
+  border: none;
+  padding: 0 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (min-width : 993px) and (max-width:1117px) {
+  .IB_TextContainer h2 {
+    font-size: 20px;
+  }
+  
+  .IB_TextContainer .IB_Subsicripe span {
+    font-size: 12px;
+
+  }
+  .IB_TextContainer .IB_Subsicripe img{
+    width:19.28px;
+  }
+
+}
+@media screen and (max-width : 992px) {
+  .IB_FormContainer { 
+    padding: 30px 30px 20px 30px; 
+    position: relative;
+    width: 90vw;
+  }
+  .IB_FormContainer .IB_content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .IB_TextContainer h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .IB_TextContainer .IB_Subsicripe{
+    gap: 10px;
+  }
+  .IB_TextContainer .IB_Subsicripe img{
+    width:19.28px;
+  }
+  .IB_TextContainer .IB_Subsicripe span{
+    font-size: 20px;
+  }
+  .IB_FormContainer .IB_container_Icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    position: absolute;
+    top: 29px;
+    left: 32px;
+}
+  
+
+  .IB_container_Icons img{
+    width: 30px;
+  }
+  .IB_InputContainer{
+    width: 100%;
+  }
+  .IB_InputContainer .IB_Input {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .IB_FormContainer { 
+    padding: 20px 20px 10px 20px; 
+    position: relative;
+    width: 90vw;
+  }
+  .IB_FormContainer .IB_content{
+    gap: 20px;
+  }
+
+  .IB_TextContainer h2 {
+    font-size: 17px;
+  }
+  
+  .IB_TextContainer .IB_Subsicripe{
+    gap: 12px;
+  }
+  .IB_TextContainer .IB_Subsicripe img{
+    width:19.28px;
+  }
+  .IB_TextContainer .IB_Subsicripe span{
+    font-size: 10px;
+  }
+  .IB_FormContainer .IB_container_Icons{
+    top: 20px;
+    left:21px;
+  
+  }
+  .IB_container_Icons img{
+    width: 20px;
+  }
+}
+
+
+

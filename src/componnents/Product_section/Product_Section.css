@@ -1,0 +1,58 @@
+.HJ_Margin{
+    margin-bottom: 7.32%;;
+}
+
+.MA_product{
+    max-width: /* 100vw */ 98%;
+    height: 430px;
+    background-color:var( --white-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1.9rem 0;
+}
+
+.MA_product .product_circles{
+    background-color: var( --white-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.MA_product .product_circles img{
+    width: 24%;
+    margin-left: -26px;
+}
+/* /////////////////////////////////////////////// */
+.MA_mobile_product{
+    width: 98%;
+    /* height: 430px; */
+    background-color: var( --white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MA_mobile_product .row{
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.MA_mobile_product .mobile_product_circles{
+    width: 19rem;
+    background-color:var( --white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 1.9rem 0;
+
+}
+.MA_mobile_product .mobile_product_circles img{
+    width: 9rem;
+}
+

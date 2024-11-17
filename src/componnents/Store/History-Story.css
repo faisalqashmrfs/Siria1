@@ -1,0 +1,114 @@
+.IB_store {
+  margin-left: 7.24%;
+  margin-right: 7.39%;
+  width: 85.35vw;
+}
+
+.IB_store .HJ_container_Store {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.IB_store .HJ_container_Store.reverse {
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.IB_store .HJ_container_Store.Margin {
+  margin-right: 2.92%;
+}
+
+.IB_store .HJ_container_Store .IB_section-image,
+.IB_store .HJ_container_Store .IB_section-video {
+  height: 287px;
+}
+
+
+
+.IB_store .HJ_container_Store .IB_section-text p {
+  margin-bottom: 0;
+  font-family: var(--almarai-family);
+  font-size: 20px;
+  color: var(--dark-black);
+  width:/* 663px */99%;
+  height: 207px;
+}
+
+.IB_store .HJ_container_Store .IB_highlight {
+  font-family: var(--almarai-family);
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--dark-black);
+}
+
+@media (max-width: 992px) {
+
+  .IB_store .HJ_container_Store {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .IB_store .HJ_container_Store.reverse {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .IB_store .HJ_container_Store.Margin {
+    margin-right: 0;
+  }
+
+  .IB_store .HJ_container_Store .IB_section-text p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    width: 99%;
+    height: 100%;
+    text-align: start;
+  }
+
+  .IB_store .HJ_container_Store .IB_highlight {
+    font-size: 25px;
+  }
+
+  .IB_store .HJ_container_Store .IB_section-image,
+  .IB_store .HJ_container_Store .IB_section-video {
+    width: 80%;
+    transform: scale(1.25);
+    margin-top: 35px;
+  }
+
+
+}
+@media (max-width: 576px) {
+
+  .IB_store .HJ_container_Store .IB_section-text p {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  .IB_store .HJ_container_Store .IB_highlight {
+    font-size: 22px;
+  }
+
+  .IB_store .HJ_container_Store .IB_section-image,
+  .IB_store .HJ_container_Store .IB_section-video {
+    height: 240.75px;
+    width: 91%;
+    transform: scale(1.25);
+    margin-top: 35px;
+  }
+
+
+}

@@ -1,0 +1,91 @@
+
+.ra-brand{
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:85.35%;
+    gap:100px;
+    margin-top: 54px;
+    height: max-content;
+    margin-bottom: 100px;
+    
+}
+
+
+
+
+.ra-brand .ra_nav_filterbuttons{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:100px;
+    margin:auto;
+    margin-top:45px;
+    
+    font-family:var(--almarai-family);
+    font-size:1.5rem;
+    font-weight:var(--normal-weight);
+    width:100%;
+    border-bottom:1px solid var(--dark-black);
+    
+
+
+
+   
+
+}
+.ra-brand  .ra_nav_filterbuttons .filterbutton{
+    border: none;
+    background: none;
+}
+
+
+.ra-brand  .ra_nav_filterbuttons .active-button{
+    border: none ;
+    border-bottom:3px solid var(--deep-green);
+    background: none;
+    
+}
+
+
+
+.ra-brand  .ra-products{
+  width: 100%;
+  height: max-content;
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   gap:110px;
+   margin:0 auto;
+   text-align: center;
+}
+
+@media screen and (max-width:1124px) {
+
+    .ra-brand  .ra_nav_filterbuttons{
+        font-size:1.25rem;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+
+
+
+    .ra-brand .ra-products{
+            flex-direction: column;
+            padding:10px;
+          
+        }
+        .ra-brand  .ra_nav_filterbuttons {
+        width:88.83%;
+        flex-wrap:wrap;
+    }
+}

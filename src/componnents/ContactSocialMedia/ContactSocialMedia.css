@@ -1,0 +1,122 @@
+.ra-social-section {
+    width: 73.5724%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--almarai-family);
+    font-size: 1.5rem;
+    line-height: 24px;
+
+}
+
+.ra-social-contact1 .ra-social-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--almarai-family);
+
+}
+
+
+.ra-social-contact .ra-social-div1 {
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+
+.ra-social-contact .ra-social-div1 h6 {
+    font-size: 1.5rem;
+    color: var(--dark-black);
+    font-weight: var(--bold-weight);
+    line-height: 34px;
+}
+
+
+.ra-social-contact a {
+    text-decoration: none;
+}
+
+
+
+.ra-social-contact .ra-social-div2 p {
+    font-family: var(--mulish-family) !important;
+    font-size: 1rem !important;
+    line-height: 34px !important;
+    text-align: center;
+    direction: ltr !important;
+    color: var(--dark-black);
+}
+
+.ra-social-section .ra-social-contact1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 83.880%;
+
+}
+
+.ra-social-section .ra-social-line {
+    width: 100%;
+    border: 3px solid var(--green-ogaro2);
+    border-radius: 5px;
+
+}
+
+.ra-social-section .vertical-line {
+    width: 74px;
+    margin: auto;
+    border: 3px solid var(--green-ogaro2);
+    border-radius: 5px;
+    transform: rotate(-90deg);
+}
+
+
+
+.ra-social-section .ra-social-contact2 {
+    width: 83.781%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width:992px) {
+    .ra-social-section {
+        width: 88.372%;
+        flex-direction: column;
+    }
+
+    .ra-social-section .ra-social-contact1 {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 50px
+    }
+
+    .ra-social-section .ra-social-contact2 {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+
+
+    .ra-social-section .vertical-line {
+        width: 100%;
+        transform: rotate(180deg);
+    }
+
+}
