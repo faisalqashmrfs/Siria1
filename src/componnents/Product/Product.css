@@ -46,11 +46,11 @@
 }
 @media screen and (max-width:992px)  {
 
-  .ra-product{
+  /* .ra-product{
         width:100%
-    }
+    } */
    .ra-product button{
-        width: 39.68%;
+        width: 200px;
         font-size: 0.93rem;
     }
   

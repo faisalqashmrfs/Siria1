@@ -80,8 +80,8 @@
 
 
     .ra-brand .ra-products{
-            flex-direction: column;
             padding:10px;
+            gap: 100px 50px;
           
         }
         .ra-brand  .ra_nav_filterbuttons {
