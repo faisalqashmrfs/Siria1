@@ -39,8 +39,8 @@
     position: absolute;
     width: 48.24%;
     height: 464px;
-    margin: 77px 77px 0px 77px;
-    translate: 0px 77px;
+    margin: 77px auto 0px auto;
+    translate: 0px 47px;
 
 
 }
@@ -114,7 +114,7 @@
 }
 
 .ra-contact-msg-wrapper .ra-contact-msg-form .button-div button {
-    width: 32%;
+    width: 200px;
     height:61px;
     text-align: center;
     font-family: var(--mulish-family);
@@ -137,4 +137,18 @@
         translate: 0px 45px;
        
     }
+}
+@media screen and (max-width:602px){
+    .ra-contact-msg-wrapper
+    {
+        width: 90%;
+    }
+    .ra-contact-msg-wrapper .ra-contact-msg-form
+    {
+      width: 80%;
+    }
+
+
+
+
 }
