@@ -190,8 +190,8 @@
     }
   
     .ne-image-layout {
-      /* width: 336.5px; */
-      width: 375.5px;
+      width: 336.5px;
+      /* width: 375.5px; */
       height: 1297.5px;
       background-image: url(../../assets/images/home/layout1.svg);
       position: absolute;

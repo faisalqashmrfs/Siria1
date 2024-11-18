@@ -33,7 +33,7 @@
 
 .MA_hero .box {
     width: 85%;
-    height: 350px;
+    height: 340px;
     margin: 0 auto;
     backdrop-filter: blur(76px);
     border-radius: 30px;
@@ -47,14 +47,14 @@
 }
 
 .MA_hero .box .image{
-    width: 30%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .MA_hero .box .image img{
-    width: 70%;
+    width: 200px;
 }
 
 .MA_hero .box .text {
@@ -81,7 +81,12 @@
     font-family: var(--almarai-family);
     color: var(--dark-black);
 }
-
+@media screen and (max-width: 1250px) {
+  .MA_hero .box .text p
+  {
+    font-size: 1.25rem;
+  }
+}
 @media screen and (max-width: 992px) {
 
 /*    .MA_hero{
@@ -94,14 +99,14 @@
     }  */
     .MA_hero .box {
         width: 85%;
-        height: 323px;
+        height: 523px;
         margin: 0 auto;
         /* padding: 3.1rem 1rem 3.7rem 1rem; */
         display: flex;
         flex-direction: column;
         gap: 2rem;
         position: relative;
-        transform: translateY(102%);
+        transform: translateY(50%);
     }
 
     .MA_hero .box .image {
@@ -126,7 +131,7 @@
     }
 
     .MA_hero .box .text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--dark-black);
         line-height: 3rem;
         text-align: start;
@@ -136,14 +141,13 @@
 
     .MA_hero .box {
         width: 85%;
-        height: 500px;
-        margin: 0 auto;
+        margin: 10px auto;
         /* padding: 3.1rem 1rem 3.7rem 1rem; */
         display: flex;
         flex-direction: column;
         gap: 2rem;
         position: relative;
-        transform: translateY(28%);
+        transform: translateY(58%);
     }
 
     .MA_hero .box .image {
@@ -168,9 +172,16 @@
     }
 
     .MA_hero .box .text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--dark-black);
-        line-height: 3rem;
+        line-height: 2.5rem;
         text-align: start;
     }
+}
+@media screen and (max-width: 456px)
+{
+  .MA_hero .box .text p
+  {
+    font-size: 0.8rem;
+  }
 }

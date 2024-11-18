@@ -405,4 +405,11 @@ ul {
   .mobile_nav {
     right: 27%;
   }
+  .MA_head {
+    padding: 0 1rem;
+  }
+  .MA_head .btn-primary
+  {
+    padding: .5rem 0;
+  }
 }
